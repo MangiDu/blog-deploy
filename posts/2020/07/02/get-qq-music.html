@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>qq音乐单首歌曲api | 无人岛</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <meta name="description" content="Mangi's blog">
+    <link rel="preload" href="/assets/js/vendor.vue.46727646.js" as="script"><link rel="preload" href="/assets/css/0.styles.f79338b7.css" as="style"><link rel="preload" href="/assets/js/vendor.commons.f79338b7.js" as="script"><link rel="preload" href="/assets/css/styles.68991df3.css" as="style"><link rel="preload" href="/assets/js/app.68991df3.js" as="script"><link rel="preload" href="/assets/css/7.styles.f009c151.css" as="style"><link rel="preload" href="/assets/js/7.f009c151.js" as="script"><link rel="preload" href="/assets/js/40.5a49f6df.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.9a9ad6ac.css"><link rel="prefetch" href="/assets/css/10.styles.5f4aac52.css"><link rel="prefetch" href="/assets/css/11.styles.5b43e2f0.css"><link rel="prefetch" href="/assets/css/12.styles.61bf817b.css"><link rel="prefetch" href="/assets/css/13.styles.5945b0d8.css"><link rel="prefetch" href="/assets/css/14.styles.15d82fae.css"><link rel="prefetch" href="/assets/css/15.styles.9fdbfc95.css"><link rel="prefetch" href="/assets/css/16.styles.8467519c.css"><link rel="prefetch" href="/assets/css/17.styles.ff43cd19.css"><link rel="prefetch" href="/assets/css/18.styles.a6f80004.css"><link rel="prefetch" href="/assets/css/19.styles.23b50631.css"><link rel="prefetch" href="/assets/css/20.styles.cdeeffd0.css"><link rel="prefetch" href="/assets/css/21.styles.a05f8d6d.css"><link rel="prefetch" href="/assets/css/22.styles.05b27683.css"><link rel="prefetch" href="/assets/css/23.styles.0fb98a96.css"><link rel="prefetch" href="/assets/css/24.styles.fcdf0c1e.css"><link rel="prefetch" href="/assets/css/25.styles.596edaf7.css"><link rel="prefetch" href="/assets/css/26.styles.1f12b232.css"><link rel="prefetch" href="/assets/css/27.styles.4a9ac7a5.css"><link rel="prefetch" href="/assets/css/28.styles.9e3138e8.css"><link rel="prefetch" href="/assets/css/4.styles.adb53c9e.css"><link rel="prefetch" href="/assets/css/5.styles.0d674e4a.css"><link rel="prefetch" href="/assets/css/6.styles.b3ef341f.css"><link rel="prefetch" href="/assets/css/8.styles.a70d43ae.css"><link rel="prefetch" href="/assets/css/9.styles.29900202.css"><link rel="prefetch" href="/assets/js/1.9a9ad6ac.js"><link rel="prefetch" href="/assets/js/10.5f4aac52.js"><link rel="prefetch" href="/assets/js/11.5b43e2f0.js"><link rel="prefetch" href="/assets/js/12.61bf817b.js"><link rel="prefetch" href="/assets/js/13.5945b0d8.js"><link rel="prefetch" href="/assets/js/14.15d82fae.js"><link rel="prefetch" href="/assets/js/15.9fdbfc95.js"><link rel="prefetch" href="/assets/js/16.8467519c.js"><link rel="prefetch" href="/assets/js/17.ff43cd19.js"><link rel="prefetch" href="/assets/js/18.a6f80004.js"><link rel="prefetch" href="/assets/js/19.23b50631.js"><link rel="prefetch" href="/assets/js/20.cdeeffd0.js"><link rel="prefetch" href="/assets/js/21.a05f8d6d.js"><link rel="prefetch" href="/assets/js/22.05b27683.js"><link rel="prefetch" href="/assets/js/23.0fb98a96.js"><link rel="prefetch" href="/assets/js/24.fcdf0c1e.js"><link rel="prefetch" href="/assets/js/25.596edaf7.js"><link rel="prefetch" href="/assets/js/26.1f12b232.js"><link rel="prefetch" href="/assets/js/27.4a9ac7a5.js"><link rel="prefetch" href="/assets/js/28.9e3138e8.js"><link rel="prefetch" href="/assets/js/29.4b79a844.js"><link rel="prefetch" href="/assets/js/30.6a6ead06.js"><link rel="prefetch" href="/assets/js/31.66df04d2.js"><link rel="prefetch" href="/assets/js/32.04835811.js"><link rel="prefetch" href="/assets/js/33.8060c3ef.js"><link rel="prefetch" href="/assets/js/34.8994e3b4.js"><link rel="prefetch" href="/assets/js/35.0d6638ec.js"><link rel="prefetch" href="/assets/js/36.beb327f1.js"><link rel="prefetch" href="/assets/js/37.13500b0a.js"><link rel="prefetch" href="/assets/js/38.c1bc601b.js"><link rel="prefetch" href="/assets/js/39.975e26e6.js"><link rel="prefetch" href="/assets/js/4.adb53c9e.js"><link rel="prefetch" href="/assets/js/41.a54066fc.js"><link rel="prefetch" href="/assets/js/42.bfa6d86f.js"><link rel="prefetch" href="/assets/js/43.8822c82d.js"><link rel="prefetch" href="/assets/js/44.c055643e.js"><link rel="prefetch" href="/assets/js/45.4ced09f6.js"><link rel="prefetch" href="/assets/js/46.43b229a0.js"><link rel="prefetch" href="/assets/js/47.f5a53421.js"><link rel="prefetch" href="/assets/js/48.d5c0d259.js"><link rel="prefetch" href="/assets/js/49.0ff57fdc.js"><link rel="prefetch" href="/assets/js/5.0d674e4a.js"><link rel="prefetch" href="/assets/js/50.86d8096b.js"><link rel="prefetch" href="/assets/js/51.9d2c38f2.js"><link rel="prefetch" href="/assets/js/52.c8d60c48.js"><link rel="prefetch" href="/assets/js/53.b2a2a790.js"><link rel="prefetch" href="/assets/js/54.206b36af.js"><link rel="prefetch" href="/assets/js/55.d8bbf5bf.js"><link rel="prefetch" href="/assets/js/56.133ce18a.js"><link rel="prefetch" href="/assets/js/57.bb83d613.js"><link rel="prefetch" href="/assets/js/58.e206b54e.js"><link rel="prefetch" href="/assets/js/59.daf20514.js"><link rel="prefetch" href="/assets/js/6.b3ef341f.js"><link rel="prefetch" href="/assets/js/60.d47c62a5.js"><link rel="prefetch" href="/assets/js/61.a338ab4d.js"><link rel="prefetch" href="/assets/js/62.748e0320.js"><link rel="prefetch" href="/assets/js/63.f445b05d.js"><link rel="prefetch" href="/assets/js/64.6e944a1c.js"><link rel="prefetch" href="/assets/js/65.efece00d.js"><link rel="prefetch" href="/assets/js/66.6af4b98f.js"><link rel="prefetch" href="/assets/js/67.cb1a7549.js"><link rel="prefetch" href="/assets/js/68.871c0798.js"><link rel="prefetch" href="/assets/js/69.0b4265c8.js"><link rel="prefetch" href="/assets/js/8.a70d43ae.js"><link rel="prefetch" href="/assets/js/9.29900202.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f79338b7.css"><link rel="stylesheet" href="/assets/css/styles.68991df3.css"><link rel="stylesheet" href="/assets/css/7.styles.f009c151.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-meteorlxy"><header class="header" data-v-274140e4><div data-v-153321d9 data-v-274140e4><nav class="navbar" data-v-153321d9><div class="container" data-v-153321d9><a href="/" class="router-link-active" data-v-153321d9><span class="navbar-site-name" data-v-153321d9>
+                    无人岛
+                </span></a> <div class="navbar-toggler" data-v-153321d9><svg class="icon" style="font-size:1.2em;" data-v-153321d9 data-v-153321d9><title data-v-153321d9 data-v-153321d9>menu</title><use xlink:href="#icon-menu" data-v-153321d9 data-v-153321d9></use></svg></div> <div class="navbar-links" data-v-153321d9><a href="/" class="navbar-link" data-v-153321d9>
+                        首页
+                    </a><a href="/posts/" class="navbar-link router-link-active" data-v-153321d9>
+                        文章
+                    </a><a href="/records/" class="navbar-link" data-v-153321d9>
+                        随想
+                    </a><a href="/list/" class="navbar-link" data-v-153321d9>
+                        清单
+                    </a><a href="/plans/" class="navbar-link" data-v-153321d9>
+                        计划
+                    </a><a href="/about/" class="navbar-link" data-v-153321d9>
+                        关于
+                    </a></div></div></nav> <div class="navbar-holder" style="display:none;" data-v-153321d9></div></div> <div class="banner" data-v-134343ee data-v-274140e4 data-v-274140e4><div class="container" data-v-134343ee><div class="center" data-v-134343ee><h1 data-v-134343ee data-v-274140e4>
+                    qq音乐单首歌曲api
+                </h1></div></div></div></header> <div class="container clearfix show-aside" data-v-f7205006 data-v-f7205006><main class="main" data-v-f7205006><div class="post" data-v-f7205006 data-v-f7205006><section class="post-head main-div" data-v-0b0d8ba6><section class="post-date clearfix" data-v-0b0d8ba6><span class="create-date" data-v-0b0d8ba6>
+            发布时间 : 2020-07-02
+        </span> <span class="update-date" data-v-0b0d8ba6>
+            最后修改 : 2020-07-31
+        </span></section> <section class="reading-statistics" data-v-0b0d8ba6><span class="word-count cell-block" data-v-0b0d8ba6><svg class="icon" data-v-0b0d8ba6 data-v-0b0d8ba6><title data-v-0b0d8ba6 data-v-0b0d8ba6>note</title><use xlink:href="#icon-note" data-v-0b0d8ba6 data-v-0b0d8ba6></use></svg> <span data-v-0b0d8ba6>全文 6772 字</span></span> <span class="reading-time cell-block" data-v-0b0d8ba6><svg class="icon" data-v-0b0d8ba6 data-v-0b0d8ba6><title data-v-0b0d8ba6 data-v-0b0d8ba6>clock</title><use xlink:href="#icon-clock" data-v-0b0d8ba6 data-v-0b0d8ba6></use></svg> <span data-v-0b0d8ba6>大约需要 17 分钟</span></span></section></section> <article class="main-div"><div class="post-content content content__default"><p>想在博客插 qq 音乐的播放链接，然鹅 qq 音乐不像网易云那样有前人的完整工作成果，只能动手自己丰衣足食了</p> <p>信息来源：qq 音乐网页版</p> <h2 id="获取歌曲信息"><a href="#获取歌曲信息" class="header-anchor">#</a> 获取歌曲信息</h2> <p>需要的格式如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+      <span class="token string">&quot;song_type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;song_mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;song_id&quot;</span><span class="token operator">:</span> <span class="token number">270006366</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>在单曲详情页面是服务端渲染好后直接返回在 <code>head</code>  中的数据</p> <details><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;songid&quot;</span><span class="token operator">:</span> <span class="token number">270006366</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;songmid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;songtype&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;songname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;songtitle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;songsubtitle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;cdIdx&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;interval&quot;</span><span class="token operator">:</span> <span class="token number">228</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;isonly&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;genre&quot;</span><span class="token operator">:</span> <span class="token number">22</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;singer&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">12960</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;001oDXfh4Obasb&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;朱婧汐JING&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;朱婧汐JING&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;uin&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;albumid&quot;</span><span class="token operator">:</span> <span class="token number">13178853</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;albummid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002fjMTa08P5oO&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;albumpmid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002fjMTa08P5oO_1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;albumname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;strMediaMid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sizeape&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;preview&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;trybegin&quot;</span><span class="token operator">:</span> <span class="token number">89381</span><span class="token punctuation">,</span> <span class="token property">&quot;tryend&quot;</span><span class="token operator">:</span> <span class="token number">140398</span><span class="token punctuation">,</span> <span class="token property">&quot;trysize&quot;</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pay&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;payalbumprice&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token property">&quot;payplay&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token property">&quot;timefree&quot;</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msgid&quot;</span><span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;switch&quot;</span><span class="token operator">:</span> <span class="token number">17413891</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;alertid&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;action&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;play_lq&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;play_hq&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;play_sq&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;down_lq&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;down_hq&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;down_sq&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;soso&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;fav&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;share&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;bgm&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ring&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;sing&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;radio&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;try&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;give&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;play&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tryPlay&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;anyPlay&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tryIcon&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;disabled&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sosoFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;formatted&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mtype&quot;</span><span class="token operator">:</span> <span class="token string">&quot;qqmusic&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;songurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;270006366&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;singername&quot;</span><span class="token operator">:</span> <span class="token string">&quot;朱婧汐JING&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;singerid&quot;</span><span class="token operator">:</span> <span class="token number">12960</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;singermid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;001oDXfh4Obasb&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fav&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details> <h2 id="请求的-data-构造"><a href="#请求的-data-构造" class="header-anchor">#</a> 请求的 data 构造</h2> <p>除了 <code>param</code>  是通过上一步获取到的数据以外，其他都是写死的数据</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;songinfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;music.pf_song_detail_svr&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;method&quot;</span><span class="token operator">:</span> <span class="token string">&quot;get_song_detail_yqq&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;param&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;song_type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;song_mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;song_id&quot;</span><span class="token operator">:</span> <span class="token number">270006366</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>经过尝试， <code>param</code>  中仅携带 <code>song_id</code>  即可获得需求的数据</p> <h2 id="内容完整性校验"><a href="#内容完整性校验" class="header-anchor">#</a> 内容完整性校验</h2> <p>通过挂载在全局的 <code>getSecuritySign</code>  方法，将 data 字符串化作为入参生成校验标志</p> <p>很疑惑，不晓得为什么这个方法在 node 环境的结果可以被校验通过，但是在浏览器环境下就没有通过，待调查</p> <h2 id="请求"><a href="#请求" class="header-anchor">#</a> 请求</h2> <p>接口： <code>https://u.y.qq.com/cgi-bin/musics.fcg</code></p> <p>url query:</p> <ul><li>sign: 内容完整性校验标志</li> <li>data</li></ul> <p>返回：</p> <details><summary>点击查看详细内容</summary> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1593681102983</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;start_ts&quot;</span><span class="token operator">:</span> <span class="token number">1593681102737</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;songinfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;info&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;company&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;唱片公司&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JUMP_TO_COMPANY&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京椰子小岛创意文化有限公司&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;show_type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;is_parent&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;read_cnt&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;jumpurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;ori_picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pos&quot;</span><span class="token operator">:</span> <span class="token number">51</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;more&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;selected&quot;</span><span class="token operator">:</span> <span class="token string">&quot;company&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;use_platform&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;genre&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;歌曲流派&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JUMP_TO_CATEGORY&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Electronica&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;show_type&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;is_parent&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;read_cnt&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;jumpurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://y.qq.com/m/client/categoryzone/detail.html?categoryId=45&amp;showType=2&amp;isParent=0&amp;_hidehd=1&amp;groupId=100&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;ori_picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pos&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;more&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;selected&quot;</span><span class="token operator">:</span> <span class="token string">&quot;genre&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;use_platform&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;lan&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;歌曲语种&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JUMP_TO_CATEGORY&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;国语&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;show_type&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;is_parent&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;read_cnt&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;jumpurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://y.qq.com/m/client/categoryzone/detail.html?categoryId=1&amp;showType=2&amp;isParent=0&amp;_hidehd=1&amp;groupId=100&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;ori_picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pos&quot;</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;more&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;selected&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lan&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;use_platform&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pub_time&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;发行时间&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;desc&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-06-29&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;show_type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;is_parent&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;read_cnt&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;jumpurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;ori_picurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pos&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;more&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;selected&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pub_time&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;use_platform&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extras&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;transname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;subtitle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;from&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;track_info&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">270006366</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;subtitle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;singer&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">12960</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;001oDXfh4Obasb&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;朱婧汐JING&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;朱婧汐JING&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;uin&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;album&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">13178853</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002fjMTa08P5oO&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;表演工具&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;subtitle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;time_public&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-06-29&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pmid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002fjMTa08P5oO_1&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;mv&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1630106</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;vid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;s0034122l9s&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;vt&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;interval&quot;</span><span class="token operator">:</span> <span class="token number">228</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;isonly&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;genre&quot;</span><span class="token operator">:</span> <span class="token number">22</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;index_cd&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;index_album&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;time_public&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2020-06-29&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;fnote&quot;</span><span class="token operator">:</span> <span class="token number">4009</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;file&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;media_mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_24aac&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_48aac&quot;</span><span class="token operator">:</span> <span class="token number">1395332</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_96aac&quot;</span><span class="token operator">:</span> <span class="token number">2793587</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_192ogg&quot;</span><span class="token operator">:</span> <span class="token number">5262130</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_192aac&quot;</span><span class="token operator">:</span> <span class="token number">5535219</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_128mp3&quot;</span><span class="token operator">:</span> <span class="token number">3664454</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_320mp3&quot;</span><span class="token operator">:</span> <span class="token number">9160826</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_ape&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_flac&quot;</span><span class="token operator">:</span> <span class="token number">28792736</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_dts&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_try&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;try_begin&quot;</span><span class="token operator">:</span> <span class="token number">89381</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;try_end&quot;</span><span class="token operator">:</span> <span class="token number">140398</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_hires&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;hires_sample&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;hires_bitdepth&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;b_30s&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;e_30s&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;size_96ogg&quot;</span><span class="token operator">:</span> <span class="token number">2707642</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pay&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;pay_month&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;price_track&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;price_album&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pay_play&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pay_down&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;pay_status&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;time_free&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;action&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;switch&quot;</span><span class="token operator">:</span> <span class="token number">17413891</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;msgid&quot;</span><span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;alert&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;icons&quot;</span><span class="token operator">:</span> <span class="token number">147324</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;msgshare&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;msgfav&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;msgdown&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;msgpay&quot;</span><span class="token operator">:</span> <span class="token number">6</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;ksong&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">11616090</span><span class="token punctuation">,</span> <span class="token property">&quot;mid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0025IKDG3tPyoN&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;gain&quot;</span><span class="token operator">:</span> <span class="token number">-8.035</span><span class="token punctuation">,</span> <span class="token property">&quot;peak&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token property">&quot;lra&quot;</span><span class="token operator">:</span> <span class="token number">7.532</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;bpm&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;trace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;data_type&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;modify_stamp&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pingpong&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;ppurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;tid&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;ov&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;sa&quot;</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;es&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details> <h2 id="构造播放url"><a href="#构造播放url" class="header-anchor">#</a> 构造播放 url</h2> <p>相关代码在播放器页的 <code>player_module_[hash].js</code>  文件中</p> <p>可播放路径格式： <code>CDN</code>  +  <code>VKey</code></p> <p><code>CDN</code>  有两种：</p> <ul><li><code>http://isure.stream.qqmusic.qq.com</code></li> <li><code>http://ws.stream.qqmusic.qq.com</code></li></ul> <p><code>VKey</code>  仍是通过接口请求获取的，包含歌曲信息： <code>/C400002ehbCz4LvX1t.m4a?guid=4379097852&amp;vkey=DAEFFCCFBAB8C78A8167DF13158CCA1A737A63071680DE4DC620A94C0E146B90EB6DF99D966AA4506CFD2A6F2C8C6B86EE40DE8A92B2520C</code></p> <p>生成 CDN 地址后面的具体歌曲播放信息的关键方法： <code>getVKey</code></p> <p>请求的 url 依然是 <code>//u.y.qq.com/cgi-bin/musicu.fcg</code> ，请求 data 格式如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    req_0<span class="token operator">:</span> <span class="token punctuation">{</span>
+        module<span class="token operator">:</span> <span class="token string">&quot;vkey.GetVkeyServer&quot;</span><span class="token punctuation">,</span>
+        method<span class="token operator">:</span> <span class="token string">&quot;CgiGetVkey&quot;</span><span class="token punctuation">,</span>
+        param<span class="token operator">:</span> <span class="token punctuation">{</span>
+            guid<span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token operator">+</span> <span class="token function">_getGuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            songmid<span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+            songtype<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            uin<span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            loginflag<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            platform<span class="token operator">:</span> <span class="token string">&quot;20&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>其中关键的方法： <code>_getGuid</code>  方法只是获取某种随机化的时间戳</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">_getGuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getUTCMilliseconds</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> _guid <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span><span class="token number">2147483647</span> <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span> t <span class="token operator">%</span> <span class="token number">1e10</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>返回结果：</p> <details><div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1594102033042</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;start_ts&quot;</span><span class="token operator">:</span> <span class="token number">1594102033040</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;req_0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;expiration&quot;</span><span class="token operator">:</span> <span class="token number">80400</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;login_key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;midurlinfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;common_downfromtag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;errtype&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C400002ehbCz4LvX1t.m4a&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;flowfromtag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;flowurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;hisbuy&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;hisdown&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;isbuy&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;isonly&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;onecan&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;opi128kurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;opi192koggurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;opi192kurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;opi30surl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;opi48kurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;opi96kurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;opiflackurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;p2pfromtag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;pdl&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;pneed&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;pneedbuy&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;premain&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;purl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C400002ehbCz4LvX1t.m4a?guid=4379097852&amp;vkey=1BEDE1A379C7779DF7D9A0580EF966C9EA1FC11B653038E9B8178650B60D7233439472FAE6E045F3D8E39C0EF830A6A9A845B68C81B42856&amp;uin=0&amp;fromtag=66&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;qmdlfromtag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;result&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;songmid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;002ehbCz4LvX1t&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;tips&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;uiAlert&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;vip_downfromtag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;vkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1BEDE1A379C7779DF7D9A0580EF966C9EA1FC11B653038E9B8178650B60D7233439472FAE6E045F3D8E39C0EF830A6A9A845B68C81B42856&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;wififromtag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;wifiurl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;103.254.69.244&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;retcode&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;servercheck&quot;</span><span class="token operator">:</span> <span class="token string">&quot;35001591e0de27d75b6e8d29371f0b60&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;sip&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;http://ws.stream.qqmusic.qq.com/&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;http://isure.stream.qqmusic.qq.com/&quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;testfile2g&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C400003mAan70zUy5O.m4a?guid=4379097852&amp;vkey=1BEEF357A2D16BBF33686950081AE65507A470A68D8C444342AEC8ECD5F979714440A287FA059E4770F31E2D2474117FC02E1B85ECC09AB2&amp;uin=&amp;fromtag=3&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;testfilewifi&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C400003mAan70zUy5O.m4a?guid=4379097852&amp;vkey=1BEEF357A2D16BBF33686950081AE65507A470A68D8C444342AEC8ECD5F979714440A287FA059E4770F31E2D2474117FC02E1B85ECC09AB2&amp;uin=&amp;fromtag=3&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;thirdip&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;&quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;uin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;verify_type&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details> <p>其中 <code>midurlinfo</code>  中的 <code>purl</code>  接在 CDN 之后，就是可以使用的播放链接了</p> <p>悲报：最后还是失败了，没考虑到人家对跨域来源做了校验，我真是太傻了，虽然可以自己搭服务器处理，不过本身只是想给博客静态页加个播放链接，就先不搞这么麻烦了</p></div> <div class="post-license"><div class="current-link">本文链接 <a href="http://mangi.hippor.com/posts/2020/07/02/get-qq-music.html">http://mangi.hippor.com/posts/2020/07/02/get-qq-music.html</a></div> <div>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a> 协议进行授权</div></div></article> <section class="post-meta main-div" data-v-6dac34f8><section class="post-links" data-v-6dac34f8><a href="/posts/2020/07/01/about-interest.html" class="post-link" data-v-6dac34f8>
+            上一篇 : 一些思考 - 关于兴趣与坚持
+        </a> <a href="/posts/2020/07/03/css-tips-collection-02.html" class="post-link" data-v-6dac34f8>
+            下一篇 : css 效果收集记录 - 其二
+        </a></section></section> <!----></div></main> <aside class="aside" data-v-f7205006><div class="info-card main-div" data-v-1368ccf2 data-v-f7205006><div class="info-card-header" data-v-1368ccf2><img src="http://images.hippor.com/avatar.png" alt="Mangi" class="info-avatar" data-v-1368ccf2></div> <div class="info-card-body" data-v-1368ccf2><section class="info-nickname" data-v-1368ccf2>
+            Mangi
+        </section> <section class="info-desc" data-v-1368ccf2>专业键盘按摩师</section> <section class="info-contact" data-v-1368ccf2><section data-v-1368ccf2><span title="中国北京" data-v-1368ccf2 data-v-1368ccf2><svg class="icon" style="font-size:1em;" data-v-1368ccf2 data-v-1368ccf2><title data-v-1368ccf2 data-v-1368ccf2>中国北京</title><use xlink:href="#icon-location" data-v-1368ccf2 data-v-1368ccf2></use></svg><span class="info-text" data-v-1368ccf2 data-v-1368ccf2>
+                    中国北京
+                </span></span></section> <section data-v-1368ccf2><span title="无人岛岛民代表" data-v-1368ccf2 data-v-1368ccf2><svg class="icon" style="font-size:1em;" data-v-1368ccf2 data-v-1368ccf2><title data-v-1368ccf2 data-v-1368ccf2>无人岛岛民代表</title><use xlink:href="#icon-organization" data-v-1368ccf2 data-v-1368ccf2></use></svg><span class="info-text" data-v-1368ccf2 data-v-1368ccf2>
+                    无人岛岛民代表
+                </span></span></section> <section data-v-1368ccf2><a href="mailto:mangidu@qq.com" title="mangidu@qq.com" data-v-1368ccf2 data-v-1368ccf2><svg class="icon" style="font-size:1em;" data-v-1368ccf2 data-v-1368ccf2><title data-v-1368ccf2 data-v-1368ccf2>mangidu@qq.com</title><use xlink:href="#icon-email" data-v-1368ccf2 data-v-1368ccf2></use></svg><span class="info-text" data-v-1368ccf2 data-v-1368ccf2>
+                    mangidu@qq.com
+                </span></a></section></section></div> <div class="info-card-footer" data-v-1368ccf2><section class="info-sns clearfix" data-v-1368ccf2><a href="https://github.com/MangiDu" target="_blank" class="sns-link" data-v-1368ccf2><span title="GitHub: MangiDu" class="sns-icon" data-v-1368ccf2 data-v-1368ccf2><svg class="icon" style="font-size:1.5em;" data-v-1368ccf2 data-v-1368ccf2><title data-v-1368ccf2 data-v-1368ccf2>GitHub: MangiDu</title><use xlink:href="#icon-github" data-v-1368ccf2 data-v-1368ccf2></use></svg></span></a><a href="https://twitter.com/Mangi_XD" target="_blank" class="sns-link" data-v-1368ccf2><span title="Twitter: 冬白" class="sns-icon" data-v-1368ccf2 data-v-1368ccf2><svg class="icon" style="font-size:1.5em;" data-v-1368ccf2 data-v-1368ccf2><title data-v-1368ccf2 data-v-1368ccf2>Twitter: 冬白</title><use xlink:href="#icon-twitter" data-v-1368ccf2 data-v-1368ccf2></use></svg></span></a><a href="https://weibo.com/u/2693186630" target="_blank" class="sns-link" data-v-1368ccf2><span title="新浪微博: @Mangi_" class="sns-icon" data-v-1368ccf2 data-v-1368ccf2><svg class="icon" style="font-size:1.5em;" data-v-1368ccf2 data-v-1368ccf2><title data-v-1368ccf2 data-v-1368ccf2>新浪微博: @Mangi_</title><use xlink:href="#icon-weibo" data-v-1368ccf2 data-v-1368ccf2></use></svg></span></a></section></div></div> <div class="post-nav-card main-div" style="position:relative;top:0;width:0px;" data-v-f7205006><div class="post-nav-contents"><svg class="icon"><title>directory</title><use xlink:href="#icon-directory"></use></svg> <span>文章目录</span> <div class="post-nav-toc"><ul><li><a href="/posts/2020/07/02/get-qq-music.html#获取歌曲信息">获取歌曲信息</a></li><li><a href="/posts/2020/07/02/get-qq-music.html#请求的-data-构造">请求的 data 构造</a></li><li><a href="/posts/2020/07/02/get-qq-music.html#内容完整性校验">内容完整性校验</a></li><li><a href="/posts/2020/07/02/get-qq-music.html#请求">请求</a></li><li><a href="/posts/2020/07/02/get-qq-music.html#构造播放url">构造播放url</a></li></ul></div></div> <!----></div></aside></div> <footer class="footer" data-v-046aaa2a><p class="footer-text" data-v-046aaa2a><span data-v-046aaa2a>Powered by </span> <a href="https://github.com/vuejs/vuepress" target="_blank" data-v-046aaa2a>
+            VuePress
+        </a> <span data-v-046aaa2a> | </span> <span data-v-046aaa2a> Theme by </span> <a href="https://github.com/meteorlxy/vuepress-theme-meteorlxy" target="_blank" data-v-046aaa2a>
+                meteorlxy
+            </a></p> <p class="footer-text" data-v-046aaa2a>Copyright © 2020 <a href="http://mangi.hippor.com">Mangi</a></p></footer></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/vendor.vue.46727646.js" defer></script><script src="/assets/js/7.f009c151.js" defer></script><script src="/assets/js/40.5a49f6df.js" defer></script><script src="/assets/js/vendor.commons.f79338b7.js" defer></script><script src="/assets/js/app.68991df3.js" defer></script>
+  </body>
+</html>
